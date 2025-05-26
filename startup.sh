@@ -16,7 +16,7 @@ if [ $? != 0 ]; then
 
   # Send Commnds to move terminal to correct place
   tmux send-keys -t $SESSION_NAME:2 'cd /home/tyler/.config/nvim' C-m
-  tmux send-keys -t $SESSION_NAME:2 'nvim .' C-m
+  # tmux send-keys -t $SESSION_NAME:2 'nvim .' C-m
   tmux send-keys -t $SESSION_NAME:3 'cd /home/tyler/.config/nvim' C-m
 
   # Move the first default window to the last position
@@ -44,9 +44,9 @@ if [ $? != 0 ]; then
   tmux send-keys -t $SESSION_NAME:3 'cd $DND_HOME/Dnd-Interactive-Backend' C-m
   tmux send-keys -t $SESSION_NAME:4 'cd $DND_HOME/Dnd-Interactive-Shared' C-m
 
-  tmux send-keys -t $SESSION_NAME:2 'nvim .' C-m
-  tmux send-keys -t $SESSION_NAME:3 'nvim .' C-m
-  tmux send-keys -t $SESSION_NAME:4 'nvim .' C-m
+  # tmux send-keys -t $SESSION_NAME:2 'nvim .' C-m
+  # tmux send-keys -t $SESSION_NAME:3 'nvim .' C-m
+  # tmux send-keys -t $SESSION_NAME:4 'nvim .' C-m
 
   # Set the terminal in the right place
   tmux split-window -h -t $SESSION_NAME:1
@@ -81,22 +81,23 @@ if [ $? != 0 ]; then
   tmux send-keys -t $SESSION_NAME:3 'cd $MNC_HOME/Backend/Acarolinecreative-spring/' C-m
   tmux send-keys -t $SESSION_NAME:4 'cd $MNC_HOME/Backend/Docker-Services' C-m
 
-  tmux send-keys -t $SESSION_NAME:2 'nvim .' C-m
-  tmux send-keys -t $SESSION_NAME:3 'nvim .' C-m
-  tmux send-keys -t $SESSION_NAME:4 'nvim .' C-m
+  # tmux send-keys -t $SESSION_NAME:2 'nvim .' C-m
+  # tmux send-keys -t $SESSION_NAME:3 'nvim .' C-m
+  # tmux send-keys -t $SESSION_NAME:4 'nvim .' C-m
 
   # Set the terminal in the right place
-  tmux split-window -h -t $SESSION_NAME:1
-  tmux split-window -h -t $SESSION_NAME:1
-  tmux split-window -h -t $SESSION_NAME:1
+  # tmux split-window -h -t $SESSION_NAME:1
+  # tmux split-window -h -t $SESSION_NAME:1
+  # tmux split-window -h -t $SESSION_NAME:1
+  #
+  # tmux send-keys -t $SESSION_NAME:1.1 'cd $MNC_HOME/Frontend' C-m
+  # tmux send-keys -t $SESSION_NAME:1.2 'cd $MNC_HOME/Backend/Acarolinecreative-spring' C-m
+  # tmux send-keys -t $SESSION_NAME:1.3 'cd $MNC_HOME/Backend/Docker-Services' C-m
+  # tmux send-keys -t $SESSION_NAME:1.4 'cd $MNC_HOME/' C-m
+  tmux send-keys -t $SESSION_NAME:1 'cd $MNC_HOME/' C-m
 
-  tmux send-keys -t $SESSION_NAME:1.1 'cd $MNC_HOME/Frontend' C-m
-  tmux send-keys -t $SESSION_NAME:1.2 'cd $MNC_HOME/Backend/Acarolinecreative-spring' C-m
-  tmux send-keys -t $SESSION_NAME:1.3 'cd $MNC_HOME/Backend/Docker-Services' C-m
-  tmux send-keys -t $SESSION_NAME:1.4 'cd $MNC_HOME/' C-m
+  # tmux select-layout -t $SESSION_NAME:1 tiled
 
-  tmux select-layout -t $SESSION_NAME:1 tiled
-
-  tmux move-window -r -s $SESSION_NAME:1 -t $SESSION_NAME:6
+  # tmux move-window -r -s $SESSION_NAME:1 -t $SESSION_NAME:6
 
 fi
