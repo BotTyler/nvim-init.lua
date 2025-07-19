@@ -200,7 +200,6 @@ return {
                 "js-debug-adapter",
                 "prettier",
                 "typescript-language-server",
-                "tailwind-css-language-server",
                 "angular-language-server",
             },
         },
