@@ -10,3 +10,7 @@ vim.keymap.set("n", "<leader>npv", function()
       vim.fn.system("tmux split-window -h 'nvim " .. cwd .. "'")
 end, {noremap = true, silent = true})
 --]]
+-- vim.keymap.set("n", "<leader>re", function()
+--     vim.cmd("Neotree source=custom_source toggle")
+-- end, { desc = "Open remote path within snacks" })
+-- vim.keymap.set("n", "<leader>bd", ui.bufremove, { desc = "Delete Buffer (without breaking neotree)" })
