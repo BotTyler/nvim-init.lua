@@ -37,8 +37,12 @@ return {
               --   "build.gradle.kts",
               -- },
             })
+<<<<<<< HEAD
             require("lspconfig").jdtls.setup({})
 
+=======
+            require("lspconfig").jdtls.setup()
+>>>>>>> fa0a2ae2261eb2541db9c8c159cbeff637bb32a9
           end,
         },
       },
