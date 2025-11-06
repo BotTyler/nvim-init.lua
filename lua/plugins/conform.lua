@@ -17,7 +17,7 @@ return {
             -- Configure the prettier formatter
             opts.formatters = opts.formatters or {}
             opts.formatters.prettier = {
-                prepend_args = { "--print-width", "50" },
+                prepend_args = { "--print-width", "100" },
             }
         end,
     },
