@@ -3,4 +3,3 @@
 -- Add any additional options here
 vim.g.snacks_animate = false
 vim.g.lazyvim_check_order = false
-vim.lsp.set_log_level("debug")

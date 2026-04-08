@@ -64,6 +64,7 @@
 #
 # fi
 
+# TODO: This function will run even if the session is already created.
 SESSION_NAME=MNC
 tmux has-session -t $SESSION_NAME 2>/dev/null
 if [ $? != 0 ]; then
