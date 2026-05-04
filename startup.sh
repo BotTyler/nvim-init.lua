@@ -63,11 +63,10 @@
 #   tmux move-window -r -s $SESSION_NAME:1 -t $SESSION_NAME:6
 #
 # fi
+tmux kill-server
 
-# TODO: This function will run even if the session is already created.
 SESSION_NAME=MNC
-tmux has-session -t $SESSION_NAME 2>/dev/null
-if [ $? != 0 ]; then
+if ! tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
   # Create the Session
   tmux new-session -d -s $SESSION_NAME
 
