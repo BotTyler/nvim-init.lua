@@ -10,8 +10,8 @@ return {
             "eslint-lsp",
             "js-debug-adapter",
             "prettier",
-            "typescript-language-server",
             "angular-language-server",
+            "codelldb",
         },
     },
 }
